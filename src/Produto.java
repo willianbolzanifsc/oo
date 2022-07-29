@@ -37,16 +37,10 @@ public class Produto {
 
     public Preco getPreco(LocalDateTime dataHora){
         for(Preco preco : precos){
-            //datapedido >= datainicio and < datafim
-            if(
-                    (dataHora.isAfter(preco.getInicio()) && dataHora.isBefore(preco.getFim()))
-            ||
-                            (dataHora.isAfter(preco.getInicio()) && preco.finalNullo())
-            )
-            {
+           if((dataHora.isAfter(preco.getInicio()) && dataHora.isBefore(preco.getFim()))){
                 return preco;
             }
-            }
+        }
         return null;
     }
 

@@ -8,9 +8,6 @@ public class Principal {
     public static void main(String[] args) {
         Produto caneta = new Produto("Caneta");
         Produto lapis = new Produto("Lápis");
-
-
-        //lapis.setPreco(30);
         List<Preco> listaDePrecos = new ArrayList<>();
         Preco preco1 = new Preco(5);
         preco1.setInicio(LocalDateTime.of(2022,Month.APRIL,20,0,0));
@@ -36,6 +33,6 @@ public class Principal {
        }
 
 
-       // System.out.println(caneta.getPreco(LocalDateTime.of(2022, Month.JULY,28,23,49,0)));
+        System.out.println(caneta.getPreco(LocalDateTime.of(2022, Month.APRIL,22,0,0)));
     }
 }
