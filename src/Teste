@@ -1,0 +1,21 @@
+caneta
+lapis
+
+pedido
+data 22/10/2022
+
+datapedido >= datainicio and < datafim
+
+preco atual = datafim == null
+
+caneta
+preco
+valor   data inicio  data fim (= data inicio - 1 dia)
+19      10/10/2022   09/11/2022
+28      10/11/2022
+
+lapis
+preco
+valor   data
+10      10/11/2022
+20      20/12/2022
